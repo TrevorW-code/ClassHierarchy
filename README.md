@@ -1,2 +1,2 @@
-# SchoolProject
-I am making a project for my University that creates a list of all of the classes for the information Science through a webscraper, then organizies them in order.
+# ClassHierarchy
+Creating a D3.js framework for CU that allows people to see what classes they can take in order, their prerequistes, and allows people to plan their academic journey.
