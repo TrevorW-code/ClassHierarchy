@@ -31,6 +31,7 @@
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
+// https://bl.ocks.org/rebeccasc/b4ce160b99aa5316866d6866713d85dd --> Collapse d3 tree multiple parents
 // document.body.style.backgroundColor = "black";
 
 var treeData =
@@ -40,9 +41,21 @@ var treeData =
     "children": [
       { "name": "Info 1101",
         "parent": "null"},
+      { "name": "Info 1111",
+        "parent": "null"},
+      { "name": "Info 1121",
+        "parent": "null"},
+      { "name": "Info 1301",
+        "parent": "null"},
       { "name": "Info 1201",
+        "parent": "null",
         "children": [
-          { "name": "Info 2201"}, {"name": "Info 2301"}
+          { "name": "Info 2201", 
+          "children": [
+            {"name": "Info 3401"}, {"name": "Info 3402"}
+          ]}, {"name": "Info 2301",
+          "children": [
+            {"name": "Info 3401"}, {"name": "Info 3402"}]}
         ]
       }
     ]
