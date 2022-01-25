@@ -32,7 +32,10 @@
 <script>
 
 // https://bl.ocks.org/rebeccasc/b4ce160b99aa5316866d6866713d85dd --> Collapse d3 tree multiple parents
+// d3 observable hierarchy --> https://observablehq.com/@d3/d3-hierarchy
+// stack overflow multi-parent solutions --> https://stackoverflow.com/questions/43527019/d3-tree-layout-visualization-inherit-child-with-multiple-parents
 // document.body.style.backgroundColor = "black";
+// depth article --> https://www.d3indepth.com/hierarchies/
 
 var treeData =
   {
@@ -57,7 +60,9 @@ var treeData =
           "children": [
             {"name": "Info 3401"}, {"name": "Info 3402"}]}
         ]
-      }
+      },
+      {"name": "Info 3501",
+      "depth": "3"}
     ]
   };
 
