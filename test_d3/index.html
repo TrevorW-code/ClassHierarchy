@@ -9,7 +9,7 @@
 
 .node circle {
   fill: #fff;
-  stroke: steelblue;
+  stroke: rgb(73, 73, 73);
   stroke-width: 3px;
 }
 
@@ -19,7 +19,7 @@
 
 .link {
   fill: none;
-  stroke: lightseagreen;
+  stroke: #FFD700;
   stroke-width: 2px;
 }
 
@@ -84,6 +84,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate("
           + margin.left + "," + margin.top + ")");
 
+// speed          
 var i = 0,
     duration = 750,
     root;
@@ -99,7 +100,7 @@ root.y0 = 0;
 // Collapse after the second level
 
 // keep everything open by commenting out below
-// root.children.forEach(collapse);
+root.children.forEach(collapse);
 
 update(root);
 
@@ -143,7 +144,7 @@ function update(source) {
       .attr('class', 'node')
       .attr('r', 1e-2)
       .style("fill", function(d) {
-          return d._children ? "red" : "#fff";
+          return d._children ? "lightgray" : "#fff";
       });
 
   // Add labels for the nodes
@@ -171,7 +172,7 @@ function update(source) {
   nodeUpdate.select('circle.node')
     .attr('r', 10)
     .style("fill", function(d) {
-        return d._children ? "lightsteelblue" : "#fff";
+        return d._children ? "lightgray" : "#fff";
     })
     .attr('cursor', 'pointer');
 
