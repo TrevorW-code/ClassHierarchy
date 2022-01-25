@@ -23,6 +23,18 @@ var testData = [
     {"name": "Info 3501", "parent1": "null", "parent2": "null", "depth": "3", "children": "null"}
 ]
 
+secondLinks = []
+
+var margin = {top: 20, right: 90, bottom: 30, left: 90},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate("
+          + margin.left + "," + margin.top + ")");
 
 </script>
 
